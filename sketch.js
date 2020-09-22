@@ -89,6 +89,7 @@ function draw() {
   text("Enemy HP: " + str(Math.round(eHP * 10) / 10) + "/" + str(Math.round(eHPCap * 10) / 10), windowWidth / 2 + 10, windowHeight - 35)
   text(eName, windowWidth / 2 + 10, windowHeight - 55)
   image(img, windowWidth / 2, windowHeight / 2);
+  print("YAY")
 }
 function windowResized() {
   resizeCanvas(windowWidth - 20, windowHeight - 20);
@@ -206,12 +207,7 @@ function keyPressed() {
   }
 }
 function displayValues() {
-  print(energyCap)
-  print("cap")
-  print(energySpeed);
-  print("speed")
-  print(energyPower);
-  print("power")
+  return false;
 }
 function doCombatCycle() {
   if (damage / eToughness > 0) {
