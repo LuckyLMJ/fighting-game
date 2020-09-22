@@ -206,7 +206,7 @@ function keyPressed() {
   }
 }
 function displayValues() {
-  return false;
+  print("hi")
 }
 function doCombatCycle() {
   if (damage / eToughness > 0) {
