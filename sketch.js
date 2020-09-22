@@ -91,7 +91,7 @@ function draw() {
   print("YAY")
 }
 function windowResized() {
-  resizeCanvas(windowWidth - 20, windowHeight - 20);
+  resizeCanvas(windowWidth, windowHeight);
 }
 function tick() {
   eHP += eRegen
