@@ -36,6 +36,7 @@ function setup() {
   eStats = [];
   enemyInitialize();
   let img;
+  img = loadImage("enemy.png");
 }
 
 function draw() {
@@ -87,7 +88,6 @@ function draw() {
   fill(0)
   text("Enemy HP: " + str(Math.round(eHP * 10) / 10) + "/" + str(Math.round(eHPCap * 10) / 10), windowWidth / 2 + 10, windowHeight - 35)
   text(eName, windowWidth / 2 + 10, windowHeight - 55)
-  img = loadImage("enemy.png");
   image(img, windowWidth / 2, windowHeight / 2);
 }
 function windowResized() {
