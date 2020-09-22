@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth - 20, windowHeight - 20);
   setInterval(tick, 20);
   setInterval(displayValues, 1000);
   energyPercent = 0;
@@ -88,7 +88,7 @@ function draw() {
   text(eName, windowWidth / 2 + 10, windowHeight - 55)
 }
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth - 20, windowHeight - 20);
 }
 function tick() {
   eHP += eRegen
