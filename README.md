@@ -1,2 +1,3 @@
 # fighting-game
-a wierd in-development game
+play it at https://luckylmj.github.io/fighting-game/
+it's wierd
