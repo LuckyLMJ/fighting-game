@@ -89,7 +89,7 @@ function draw() {
   text("Enemy HP: " + str(Math.round(eHP * 10) / 10) + "/" + str(Math.round(eHPCap * 10) / 10), windowWidth / 2 + 10, windowHeight - 35)
   text(eName, windowWidth / 2 + 10, windowHeight - 55)
   enemyPicture = loadImage("enemy.png");
-  playerPicture = loadImage("player-char.png");
+  playerPicture = loadImage("player.png");
   image(enemyPicture, windowWidth / 2, windowHeight / 2, (windowHeight / 2) - 100, (windowHeight / 2) - 100);
   image(playerPicture, 100, windowHeight / 2, (windowHeight / 2) - 100, (windowHeight / 2) - 100)
   print("YAY")
