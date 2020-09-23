@@ -93,7 +93,7 @@ function draw() {
   text(eName, windowWidth / 2 + 10, windowHeight - 55)
   enemyPicture = loadImage(ePic);
   playerPicture = loadImage("player.png");
-  image(enemyPicture, windowWidth / 2, windowHeight / 2, (windowHeight / 2) - 100, (windowHeight / 2) - 100);
+  image(enemyPicture, windowWidth / 2, windowHeight / 2, windowHeight / 2, windowHeight / 2);
   image(playerPicture, 100, windowHeight / 2, (windowHeight / 2) - 100, (windowHeight / 2) - 100)
 }
 function windowResized() {
