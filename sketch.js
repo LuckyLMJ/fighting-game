@@ -93,8 +93,8 @@ function draw() {
   text(eName, windowWidth / 2 + 10, windowHeight - 55)
   enemyPicture = loadImage(ePic);
   playerPicture = loadImage("player.png");
-  image(enemyPicture, windowWidth / 2, windowHeight / 2, 256, 256);
-  image(playerPicture, 100, windowHeight / 2, 256, 256)
+  image(enemyPicture, windowWidth - 356, windowHeight - 356, 256, 256);
+  image(playerPicture, 100, windowHeight - 356, 256, 256)
 }
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
