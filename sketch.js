@@ -27,14 +27,16 @@ function setup() {
   combat = false
   enemyCount = 0
   enemyList = [
-    ["Test", 6, 6, 0.01, 100, "enemy.png"],
-    ["Test 2", 20, 20, 0.05, 500, "player.png"],
-    ["Test 3", 50, 50, 0.2, 2000, "enemy.png"],
-    ["Test 4", 100, 100, 0.5, 5000, "enemy.png"]
+    ["A Robot", 6, 6, 0.01, 100, "enemy.png"],
+    ["A Clone Of You", 20, 20, 0.05, 500, "player.png"],
+    ["Another Random Robot", 50, 50, 0.2, 2000, "enemy.png"],
+    ["A Third Random Robot", 100, 100, 0.5, 5000, "enemy.png"]
   ]
   eName = "test";
   eStats = [];
   ePic = "enemy.png";
+  let playerPicture;
+  let enemyPicture;
   enemyPicture = loadImage(ePic);
   playerPicture = loadImage("player.png");
   enemyInitialize();
