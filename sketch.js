@@ -87,7 +87,7 @@ function draw() {
   fill(0)
   text("Enemy HP: " + str(Math.round(eHP * 10) / 10) + "/" + str(Math.round(eHPCap * 10) / 10), windowWidth / 2 + 10, windowHeight - 35)
   text(eName, windowWidth / 2 + 10, windowHeight - 55)
-  image(enemyPicture, windowWidth / 2, windowHeight / 2, 128, 128);
+  image(enemyPicture, windowWidth / 2, windowHeight / 2, (windowHeight / 2) - 100, (windowHeight / 2) - 100);
   print("YAY")
 }
 function windowResized() {
