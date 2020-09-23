@@ -35,9 +35,7 @@ function setup() {
   eName = "test";
   eStats = [];
   ePic = "enemy.png";
-  let playerPicture;
-  let enemyPicture;
-  enemyPicture = loadImage(ePic);
+  enemyPicture = loadImage("enemy.png");
   playerPicture = loadImage("player.png");
   enemyInitialize();
 }
@@ -83,7 +81,7 @@ function draw() {
   fill(0)
   text("HP: " + str(Math.round(hp * 10) / 10) + "/" + str(Math.round(hpCap * 10) / 10), 60, windowHeight - 35)
   fill(0)
-  text("Damage: " + str(Math.round(damage * 10) / 10) + "       Defense: " + str(Math.round(toughness * 10) / 10), 50, windowHeight - 65)
+  text("Damage: " + str(Math.round(damage * 10) / 10) + "       Defense: " + str(Math.round(toughness * 10) / 10), 50, windowHeight - 35)
   fill(255)
   rect(windowWidth / 2, windowHeight - 50, windowWidth / 2 - 50, 20);
   fill(255, 0, 0);
@@ -91,7 +89,7 @@ function draw() {
   fill(0)
   text("Enemy HP: " + str(Math.round(eHP * 10) / 10) + "/" + str(Math.round(eHPCap * 10) / 10), windowWidth / 2 + 10, windowHeight - 35)
   text(eName, windowWidth / 2 + 10, windowHeight - 55)
-  enemyPicture = loadImage(ePic);
+  enemyPicture = loadImage("enemy.png");
   playerPicture = loadImage("player.png");
   image(enemyPicture, windowWidth - 356, windowHeight - 356, 256, 256);
   image(playerPicture, 100, windowHeight - 356, 256, 256)
