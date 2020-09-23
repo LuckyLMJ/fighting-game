@@ -27,15 +27,16 @@ function setup() {
   combat = false
   enemyCount = 0
   enemyList = [
-    ["Test", 6, 6, 0.01, 100],
-    ["Test 2", 20, 20, 0.05, 500],
-    ["Test 3", 50, 50, 0.2, 2000],
-    ["Test 4", 100, 100, 0.5, 5000]
+    ["Test", 6, 6, 0.01, 100, "enemy.png"],
+    ["Test 2", 20, 20, 0.05, 500, "player.png"],
+    ["Test 3", 50, 50, 0.2, 2000, "enemy.png"],
+    ["Test 4", 100, 100, 0.5, 5000, "enemy.png"]
   ]
   eName = "test";
   eStats = [];
-  let enemyPicture;
-  let playerPicture;
+  ePic = "enemy.png";
+  enemyPicture = loadImage(ePic);
+  playerPicture = loadImage("player.png");
   enemyInitialize();
 }
 
@@ -88,7 +89,7 @@ function draw() {
   fill(0)
   text("Enemy HP: " + str(Math.round(eHP * 10) / 10) + "/" + str(Math.round(eHPCap * 10) / 10), windowWidth / 2 + 10, windowHeight - 35)
   text(eName, windowWidth / 2 + 10, windowHeight - 55)
-  enemyPicture = loadImage("enemy.png");
+  enemyPicture = loadImage(ePic);
   playerPicture = loadImage("player.png");
   image(enemyPicture, windowWidth / 2, windowHeight / 2, (windowHeight / 2) - 100, (windowHeight / 2) - 100);
   image(playerPicture, 100, windowHeight / 2, (windowHeight / 2) - 100, (windowHeight / 2) - 100)
@@ -236,6 +237,7 @@ function newEnemy() {
   eRegen = eStats[3]
   eHPCap = eStats[4]
   eHP = eStats[4]
+  ePic = eStats[5]
 }
 function enemyInitialize() {
   eStats = enemyList[enemyCount];
@@ -245,4 +247,5 @@ function enemyInitialize() {
   eRegen = eStats[3]
   eHPCap = eStats[4]
   eHP = eStats[4]
+  ePic = eStats[5]
 }
